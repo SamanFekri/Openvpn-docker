@@ -3,7 +3,7 @@ services:
   openvpn:
     build:
       context: .
-      dockerfile: ./docker/openvpn/Dockeerfile
+      dockerfile: ./docker/openvpn/Dockerfile
     image: skings-openvpn:latest
     container_name: skings-openvpn
     tty: true
