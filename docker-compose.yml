@@ -14,3 +14,5 @@ services:
     privileged: true
     network_mode: "host"
     stdin_open: true
+    environment:
+      - SALAM=saman
