@@ -1,2 +1,11 @@
 version: '3'
 services:
+  openvpn:
+    build:
+      context: .
+      dockerfile: ./docker/openvpn/Dockeerfile
+    image: skings-openvpn:latest
+    container: skings-openvpn
+    tty: true
+    port:
+      - 4040:4040
