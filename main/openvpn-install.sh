@@ -9,7 +9,6 @@
 
 
 # Detect Debian users running the script with "sh" instead of bash
-echo $SALAM
 if readlink /proc/$$/exe | grep -qs "dash"; then
 	echo "This script needs to be run with bash, not sh"
 	exit 1

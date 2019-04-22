@@ -10,8 +10,7 @@ services:
     ports:
       - 4040:4040
     volumes:
-      - ./main:/home/main
-      - ./etc/openvpn:/etc/openvpn
+      - ./users:/root
     privileged: true
     network_mode: "host"
     stdin_open: true
