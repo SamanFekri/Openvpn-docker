@@ -15,4 +15,4 @@ services:
     network_mode: "host"
     stdin_open: true
     environment:
-      - SALAM=saman
+      - IP=82.102.10.78
