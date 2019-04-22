@@ -7,5 +7,5 @@ services:
     image: skings-openvpn:latest
     container_name: skings-openvpn
     tty: true
-    port:
+    ports:
       - 4040:4040
