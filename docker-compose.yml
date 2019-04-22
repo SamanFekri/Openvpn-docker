@@ -16,3 +16,7 @@ services:
     stdin_open: true
     environment:
       - IP=82.102.10.78
+      - PROTOCOL=tcp
+      - PORT=4040
+      - DNS=1
+      - CLIENT=test
