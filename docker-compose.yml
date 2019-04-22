@@ -12,3 +12,4 @@ services:
     volumes:
       - ./main:/home/main
     privileged: true
+    net: host
