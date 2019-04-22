@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: ./docker/openvpn/Dockeerfile
     image: skings-openvpn:latest
-    container: skings-openvpn
+    container_name: skings-openvpn
     tty: true
     port:
       - 4040:4040
