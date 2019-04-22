@@ -11,3 +11,4 @@ services:
       - 4040:4040
     volumes:
       - ./main:/home/main
+    privileged: true
