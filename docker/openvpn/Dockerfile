@@ -1,8 +1,9 @@
 FROM ubuntu:16.04
 
-#install wget
+#install wget and sudo
 RUN  apt-get update \
-  && apt-get install -y wget
+  && apt-get install -y wget \
+  && apt-get -y install sudo
 
 # enable TUN
 RUN sudo mkdir -p /dev/net \
