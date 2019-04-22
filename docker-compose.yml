@@ -11,6 +11,7 @@ services:
       - 4040:4040
     volumes:
       - ./main:/home/main
+      - ./etc/openvpn:/etc/openvpn
     privileged: true
     network_mode: "host"
     stdin_open: true
