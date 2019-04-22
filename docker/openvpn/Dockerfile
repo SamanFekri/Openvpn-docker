@@ -1,9 +1,10 @@
 FROM ubuntu:16.04
 
-#install wget and sudo
+#install wget and sudo and apt-utils
 RUN  apt-get update \
   && apt-get install -y wget \
-  && apt-get -y install sudo
+  && apt-get -y install sudo \
+  && apt-get -y install apt-utils
 
 # enable TUN
 RUN sudo mkdir -p /dev/net \
