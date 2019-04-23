@@ -18,6 +18,5 @@ COPY ./main .
 
 RUN ["chmod", "+x", "./openvpn-install.sh"]
 
-# ENTRYPOINT ["tail", "-f", "/dev/null"]
-
+# tail -f /dev/null keeps container running after bash completed
 CMD ./openvpn-install.sh && tail -f /dev/null
