@@ -17,8 +17,3 @@ services:
       - PORT=4040
       - DNS=1
       - CLIENT=test
-    networks:
-      - hostnet
-networks:
-  hostnet:
-    external: true
