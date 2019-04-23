@@ -2,7 +2,6 @@ version: '3'
 services:
   openvpn:
     build:
-      network: host
       context: .
       dockerfile: ./docker/openvpn/Dockerfile
     image: skings-openvpn:latest
@@ -18,3 +17,4 @@ services:
       - PORT=4040
       - DNS=1
       - CLIENT=test
+    network: host
