@@ -22,4 +22,3 @@ services:
 networks:
   hostnet:
     external: true
-    driver: host
